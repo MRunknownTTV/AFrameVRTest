@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <!-- zorgt dat ik a-frame kan gebruiken -->
+    <a-scene>
+        <!-- zorgt dat ik iets kan forceren naar me camera te blijven kijken. -->
+        <a-camera id="camera"></a-camera>
+
+
+
+        <!-- floor and decoration -->
+
+        <!-- zorgt dat ik een object heb (specifiek een doos) -->
+      <a-box position="0 0 0" rotation="90  0 0" width="20" height="20" color="#FCFC9F"></a-box>
+      
+        <!-- sea -->
+      <a-box position="0 0 -15" rotation="90  0 0" width="20" height="10" color="#0A76C9"></a-box>
+
+      <!-- building -->
+      <a-box  position="0 5 20" rotation="0 0 15" width="10" height="80" color="#A19F6C" ></a-box>
+
+      <!-- tree -->
+       
+        <!-- tree stamp -->
+        <a-cylinder position="-2.8 0 -4.7" rotation="0 0 0" radius="0.08" height="6" color="#6B3709"></a-cylinder>
+         
+        <!-- tree leafs -->
+         <a-plane position="-2.8 3 -4.7" rotation="90 0 0" width="0.6" height="1.8" color="#3C6B09"></a-plane>
+         <a-circle position="-2.8 3 -3.8" rotation="90 0 0" radius="0.304" color="#3C6B09"></a-circle>
+         <a-circle position="-2.8 3 -5.6" rotation="90 0 0" radius="0.304" color="#3C6B09"></a-circle>
+
+          <a-plane position="-2.8 3 -4.7" rotation="90 0 90" width="0.6" height="1.8" color="#3C6B09"></a-plane>
+         <a-circle position="-3.7 3 -4.7" rotation="90 0 90" radius="0.304" color="#3C6B09"></a-circle>
+         <a-circle position="-1.9 3 -4.7" rotation="90 0 90" radius="0.304" color="#3C6B09"></a-circle>
+
+         <a-plane position="-2.8 3 -4.7" rotation="90 0 45" width="0.6" height="1.9" color="#3C6B09"></a-plane>
+         <a-circle position="-3.41 3 -4.09" rotation="90 0 45" radius="0.309" color="#3C6B09"></a-circle>
+         <a-circle position="-2.19 3 -5.31" rotation="90 0 45" radius="0.309" color="#3C6B09"></a-circle>   
+         
+         <a-plane position="-2.8 3 -4.7" rotation="90 0 -45" width="0.6" height="1.9" color="#3C6B09"></a-plane>
+         <a-circle position="-2.19 3 -4.09" rotation="90 0 -45" radius="0.309" color="#3C6B09"></a-circle>
+         <a-circle position="-3.41 3 -5.31" rotation="90 0 -45" radius="0.309" color="#3C6B09"></a-circle>   
+
+
+         <!-- sun and tekst -->
+
+            <!-- zorgt dat ik een object heb (specifiek een sphere) -->
+      <a-circle color="#FFF000" position="-30 25 -35" radius="5"></a-circle>
+      
+
+      <!-- veranderd de achtergrond naar de specifieke kleur of afbeelding -->
+      <a-sky color="#6BD0FF"></a-sky>
+
+      <!-- zorgt dat je een stukje tekst kan zien. -->
+      <a-text 
+      value="Hello, World!" 
+      color="#FFFFFF" 
+      position="-1 2 -5"
+      scale="2 2 2">
+     </a-text>
+
+    </a-scene>
+  </body>
+</html>
